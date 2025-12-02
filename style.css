@@ -1,0 +1,111 @@
+/* Grund-Styles */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #0f172a; /* dunkles blau/grau */
+}
+
+/* Hintergrund */
+.background {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  background: linear-gradient(135deg, #dbeafe 0%, #93c5fd 50%, #1d4ed8 100%);
+}
+
+/* Card */
+.card {
+  background: #ffffff;
+  max-width: 420px;
+  width: 100%;
+  padding: 2.5rem 2rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 20px 40px rgba(15, 23, 42, 0.25);
+  text-align: center;
+}
+
+/* Avatar */
+.avatar {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1.5rem;
+  border: 4px solid #bfdbfe;
+}
+
+/* Texte */
+h1 {
+  font-size: 2rem;
+  margin: 0 0 0.3rem;
+}
+
+.subtitle {
+  margin: 0 0 1rem;
+  font-size: 0.95rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #64748b;
+}
+
+.intro {
+  font-size: 0.95rem;
+  margin-bottom: 1.8rem;
+  color: #475569;
+}
+
+/* Buttons */
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.btn {
+  display: block;
+  text-decoration: none;
+  padding: 0.75rem 1rem;
+  border-radius: 999px;
+  font-weight: 600;
+  border: none;
+  background: #2563eb;
+  color: #ffffff;
+  transition: transform 0.1s ease, box-shadow 0.1s ease, background 0.1s ease;
+}
+
+.btn:hover {
+  background: #1d4ed8;
+  transform: translateY(-1px);
+  box-shadow: 0 10px 20px rgba(37, 99, 235, 0.35);
+}
+
+.btn.secondary {
+  background: #ffffff;
+  color: #1d4ed8;
+  border: 2px solid #1d4ed8;
+}
+
+.btn.secondary:hover {
+  background: #eff6ff;
+}
+
+/* Mobile-Optimierung */
+@media (max-width: 480px) {
+  .card {
+    padding: 2rem 1.5rem;
+  }
+
+  h1 {
+    font-size: 1.7rem;
+  }
+
+  .intro {
+    font-size: 0.9rem;
+  }
+}
